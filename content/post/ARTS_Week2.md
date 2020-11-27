@@ -10,7 +10,7 @@ categories: ["arts"]
 
 100000个不重复电话号码, 在有限的内存空间里, 要求排序。
 
-{% highlight python %}
+```
 #!/usr/bin/env python
 BISTSPERWORD = 32
 SHIFT = 5
@@ -42,14 +42,14 @@ print test(12)
 print '10 exists: ', test(10) # 10 not found
 set(10)
 print 'After set, 10 exists: ', test(10) # 10 found
-{% endhighlight %}
+```
 
 
 The first 3 constants are inter-related. BITSPERWORD is 32.
 This you'd want to set based on your compiler+architecture.
 SHIFT is 5, because 2^5 = 32.
 
-Finally, MASK is 0x1F which is 11111 in binary (ie: the bottom 5 bits are all set). Equivalently, MASK =  BITSPERWORD - 1.
+Finally, MASK is 0x1F which is 11111 in binary (ie: the bottom 5 bits are all set). Equivalently, `MASK =  BITSPERWORD - 1`.
 
 The bitset is conceptually just an `array of bits`.
 
@@ -180,7 +180,7 @@ options.success = function(resp) {
 
 
 ### DOM Events vs Backbone Custom Events
-backbone:listenTo() and Object.on('xx', function1(){}) linked with backbone trigger.
+`backbone:listenTo()` and `Object.on('xx', function1(){})` linked with backbone trigger.
 
 https://backbonejs.org/#Events-on
 
