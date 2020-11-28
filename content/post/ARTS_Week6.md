@@ -6,10 +6,9 @@ draft: false
 categories: ["arts"]
 ---
 ## Algorithm
-Implement a calculator that supports Parentheses
-```
+Implement a [calculator](https://github.com/gigimushroom/system_programming/blob/master/advance/python/Calculator%20Implementation.ipynb) that supports Parentheses
+```python
 symbols = ['+', '-', '*', '/']
-
 
 def tokenizer(str):
     tokens = []
@@ -86,7 +85,6 @@ The idea is:
 2. Parse the tokens to: LHS, SYMBOL, RHS
 3. Divide and conquer LHS, RHS recusively
 4. Perform math calculation when see `token_a SYM token_b` (no Parentheses)
-
 
 
 ## Review
